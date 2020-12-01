@@ -14,13 +14,13 @@ function App() {
   return (
    <Container>
      <Grid container>
-       
+
        {/* lg = Large, sm = small, md = medium, xs=extra small */}
        <Grid item xs={12} sm={12} md = {4} lg = {3} style={{backgroundColor:'Blue'}}>
           <Profile/>
        </Grid>
-
        <Grid item xs style={{backgroundColor : 'Red'}}>
+         
           <Header/>
 
           <Router > 
