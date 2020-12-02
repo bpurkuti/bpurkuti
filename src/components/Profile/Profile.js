@@ -6,28 +6,29 @@ import resumeData from "../../utils/resumeData";
 import PersonOutlineIcon from "@material-ui/icons/PersonOutline";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import TimelineItem from "@material-ui/lab/TimelineItem";
+import CustomButton from "../Button/Button";
+import GetAppIcon from "@material-ui/icons/GetApp";
 
 import "./Profile.css";
-const CustomTimelineItem = ({ title, text, link }) => {
+const CustomTimelineItem = ({ title, text, link }) => (
 	<TimelineItem>
 		<CustomTimelineSeperator />
-		<TimelineContent>
+		<TimelineContent className="timeline_content">
 			{link ? (
-				<Typography>
+				<Typography className="timelineItem_text">
 					<span>{title}:</span>{" "}
-					<a href={link} target="_blank"rel="noopener noreferrer">
+					<a href={link} target="_blank" rel="noopener noreferrer">
 						{text}
 					</a>
 				</Typography>
 			) : (
-				<Typography>
-					<span>{title}:</span>{" "}
-					{text}
+				<Typography className="timelineItem_text">
+					<span>{title}:</span> {text}
 				</Typography>
 			)}
 		</TimelineContent>
-	</TimelineItem>;
-};
+	</TimelineItem>
+);
 
 const Profile = () => {
 	return (
@@ -44,15 +45,23 @@ const Profile = () => {
 			</figure>
 
 			<div className="profile_information">
-				<CustomTimeline icon={<PersonOutlineIcon />}> </CustomTimeline>
-                <CustomTimelineItem title = 'Name' text = {resumeData.name}/>
-                <CustomTimelineItem title = 'Title' text = {resumeData.title}/>
-                <CustomTimelineItem title = 'Email' text = {resumeData.email}/>
-                <CustomTimelineItem title = 'Job' text = {resumeData.job}/>
-                <CustomTimelineItem title = 'Address' text = {resumeData.address}/>
+				<CustomTimeline icon={<PersonOutlineIcon />}>
+					<CustomTimelineItem title="Name" text={resumeData.name} />
+					<CustomTimelineItem title="Title" text={resumeData.title} />
+					{/* <CustomTimelineItem title="Job" text={resumeData.job} /> */}
+					<CustomTimelineItem title="Address" text={resumeData.address} />
 
-				<br />
-				<button>Button</button>
+					{Object.keys(resumeData.socials).map((key) => (
+						<CustomTimelineItem
+							title={key}
+							text={resumeData.socials[key].text}
+							link={resumeData.socials[key].link}
+						/>
+					))}
+				</CustomTimeline>
+				<div className = "button_container">
+					<CustomButton text={"Download Cv"} icon={<GetAppIcon />} />
+				</div>
 			</div>
 		</div>
 	);

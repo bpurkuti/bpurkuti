@@ -1,35 +1,28 @@
-import React from 'react'
-import FacebookIcon from '@material-ui/icons/Facebook';
+import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import TwitterIcon from '@material-ui/icons/Twitter';
+import './resumeData.css'
 
 export default{
     name: 'Bishwo Purkuti',
     title: 'Software Engineer',
     birthday: 'October 26',
     job: 'Currently Pursuing',
-    email: 'bishworajpurkuti@gmail.com',
-    address: 'Healdsburg, California',
+    address: 'California',
 
     socials: {
-        facebook: {
-            link: 'https://www.facebook.com',
-            text: 'My Facebook',
-            icon: <FacebookIcon/>,
+        Email: {
+            link: "mailto:bishworajpurkuti@gmail.com",
+            text: 'My Email',
+            icon: <EmailIcon/>,
         },
-        twitter: {
-            link: 'https://www.twitter.com',
-            text: 'My Twitter',
-            icon: <TwitterIcon/>,
-        },
-        linkedin: {
-            link: 'https://www.linkedln.com',
+        Linkedin: {
+            link: 'https://www.linkedin.com/in/bishwo-purkuti-a3b0101a3/',
             text: 'My LinkedIn',
             icon: <LinkedInIcon/>,
         },
-        github: {
-            link: 'https://www.github.com',
+        Github: {
+            link: 'https://www.github.com/bpurkuti',
             text: 'My Github',
             icon: <GitHubIcon/>,
         },
