@@ -16,7 +16,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4",
-    "homepage": "http://bpurkuti.github.io/resume-website" 
+    "homepage": "http://bpurkuti.github.io/resume-website/" 
   },
   "scripts": {
     "start": "react-scripts start",
