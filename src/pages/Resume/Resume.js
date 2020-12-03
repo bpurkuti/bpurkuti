@@ -4,7 +4,7 @@ import './Resume.css'
 const Resume = () => {
     return (
         <div className = "resume">
-            Resume page
+            Resume page ya
         </div>
     )
 }
