@@ -8,16 +8,19 @@
 
 /* Timelien section */
 
-.resume_timeline .timeline_content .timeline_title{
+.resume_timeline .resume_content .timeline_title{
     font-size: 16px !important;
-    font: weight 500 !important;
+    font-weight: 500 !important;
+    margin-top: -5px;
+    margin-bottom: -7px;
 }
 
-.resume_timeline .timeline_content .timeline_date{
+.resume_timeline .resume_content .timeline_date{
+    margin-top: 12px;
     color: darkslategray;
 }
 
-.resume_timeline .timeline_content .timeline_description{
+.resume_timeline .resume_content .timeline_description{
     color: gray;
     font-size: small;
     margin-top: 6px;
