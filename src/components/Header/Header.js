@@ -37,7 +37,7 @@ const Header = (props) => {
 			</Nav.Link>
 
 			<Navbar.Collapse>
-				<Nav>
+				<Nav className="header_left">
 					{/* Link to Resume */}
 					<Nav.Link
 						as={NavLink}
@@ -72,6 +72,7 @@ const Header = (props) => {
 
 					<CustomButton text={"Hire Me"} icon={<Telegram />} />
 				</div>
+				{/* This Button originally went inside div above without className  */}
 			</Navbar.Collapse>
 		</Navbar>
 	);
