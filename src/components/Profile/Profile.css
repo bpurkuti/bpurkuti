@@ -46,12 +46,12 @@
 
 .timelineItem_text{
     font-size: 13.5px !important;
-    color: #fd18db;
+    color: #6d2bd8;
    font-weight: 400 !important; 
 }
 
 .timelineItem_text > a{
-    color: #fd18db ;
+    color: #6d2bd8;
 }
 
 .timelineItem_text > span{

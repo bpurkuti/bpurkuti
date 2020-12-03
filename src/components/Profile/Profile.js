@@ -1,15 +1,15 @@
-import React from "react";
 import { Typography } from "@material-ui/core";
-import myImage from "../../assets/images/displayImage.jpg";
-import CustomTimeline, { CustomTimelineSeperator } from "../Timeline/Timeline";
-import resumeData from "../../utils/resumeData";
+import GetAppIcon from "@material-ui/icons/GetApp";
 import PersonOutlineIcon from "@material-ui/icons/PersonOutline";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import TimelineItem from "@material-ui/lab/TimelineItem";
+import React from "react";
+import myImage from "../../assets/images/personal_pic.jpg";
+import resumeData from "../../utils/resumeData";
 import CustomButton from "../Button/Button";
-import GetAppIcon from "@material-ui/icons/GetApp";
-
+import CustomTimeline, { CustomTimelineSeperator } from "../Timeline/Timeline";
 import "./Profile.css";
+
 const CustomTimelineItem = ({ title, text, link }) => (
 	<TimelineItem>
 		<CustomTimelineSeperator />

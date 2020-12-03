@@ -1,14 +1,12 @@
 import { Container, Grid } from "@material-ui/core";
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Profile from "./components/Profile/Profile";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Resume from "./pages/Resume/Resume";
-
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
-import "./App.css";
 
 function App() {
 	return (
@@ -21,14 +19,16 @@ function App() {
 				<Grid item xs>
 					<Router>
 						<Header />
-						<Switch>
-							<Route path="/portfolio">
-								<Portfolio />
-							</Route>
-							<Route path="/">
-								<Resume />
-							</Route>
-						</Switch>
+						<div className="main-content container_shadow">
+							<Switch>
+								<Route path="/portfolio">
+									<Portfolio />
+								</Route>
+								<Route path="/">
+									<Resume />
+								</Route>
+							</Switch>
+						</div>
 					</Router>
 
 					<Footer />
