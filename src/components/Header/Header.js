@@ -39,16 +39,16 @@ const Header = (props) => {
 			<Navbar.Collapse>
 				<Nav className="header_left">
 					{/* Link to Resume */}
-					<Nav.Link
+					{/* <Nav.Link
 						as={NavLink}
 						to="/"
 						className={pathName === "/" ? "header_link_active" : "header_link"}
 					>
 						Resume
-					</Nav.Link>
+					</Nav.Link> */}
 
 					{/* Link to Portfolio */}
-					<Nav.Link
+					{/* <Nav.Link
 						as={NavLink}
 						to="/portfolio"
 						className={
@@ -56,7 +56,7 @@ const Header = (props) => {
 						}
 					>
 						Portfolio
-					</Nav.Link>
+					</Nav.Link> */}
 				</Nav>
 
 				<div className="header_right">

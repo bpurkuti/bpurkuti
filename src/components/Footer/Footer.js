@@ -11,14 +11,18 @@ const Footer = () => {
 
 			<div className="footer_right">
 				<Typography className="footer_components">
-					Developed by:{" "}
-					<a href="/" target="_blank">
-						Bishwo
+					Powered by{" "}
+					<a href="https://reactjs.org/" target="_blank">
+						React.js{" "}
 					</a>
+					| © 2020 Bishwo
 					<br />
-					Background image from:{" "}
-					<a href="https://www.freepik.com/vectors/background" target="_blank">
-						www.freepik.com
+					<a
+						href="https://www.freepik.com/vectors/background"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Background image
 					</a>
 				</Typography>{" "}
 			</div>

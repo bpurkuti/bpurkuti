@@ -26,6 +26,12 @@
 
 }
 
+.pb_50{
+	padding-bottom: 50px	 !important;
+  
+  }
+  
+
 /* end margin and padding */
 
 
@@ -77,3 +83,6 @@
 
 }
 
+.graybg{
+	background-color: white;
+}

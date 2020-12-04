@@ -1,27 +1,87 @@
 /* ABout Me Section */
-.aboutme_text{
-    color: #4b6060;
-    font-size: smaller !important;
-    line-height: 22px !important;
-    white-space: pre-line;
+.aboutme_text {
+	color: #4b6060;
+	font-size: smaller !important;
+	line-height: 22px !important;
+	white-space: pre-line;
 }
 
 /* Timelien section */
 
-.resume_timeline .resume_content .timeline_title{
-    font-size: 16px !important;
-    font-weight: 500 !important;
-    margin-top: -5px;
-    margin-bottom: -7px;
+.resume_timeline .resume_content .timeline_title {
+	font-size: 16px !important;
+	font-weight: 500 !important;
+	margin-top: -5px;
+	margin-bottom: -7px;
 }
 
-.resume_timeline .resume_content .timeline_date{
-    margin-top: 12px;
-    color: darkslategray;
+.resume_timeline .resume_content .timeline_date {
+	margin-top: 12px;
+	color: darkslategray;
 }
 
-.resume_timeline .resume_content .timeline_description{
-    color: gray;
-    font-size: small;
-    margin-top: 6px;
+.resume_timeline .resume_content .timeline_description {
+	color: gray;
+	font-size: small;
+	margin-top: 6px;
 }
+
+/* interests */
+.interest {
+	height: 100%;
+	text-align: center;
+	box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important;
+    background: rgb(243 243 243);
+}
+
+.interest .interest_title {
+	font-size: 16px !important;
+	line-height: 35px !important;
+	font-weight: 600 !important;
+	text-align: center;
+}
+
+.interest .interest_description {
+	color: gray !important;
+	border-color: var(--main-color) !important;
+	margin-right: 5px !important;
+	text-align: center;
+}
+
+.interest .interest_icon > .MuiSvgIcon-root {
+	font-size: 46px !important;
+	margin-left: 0 !important;
+	font-weight: 300 !important;
+	color: darkslategray !important;
+}
+
+/* Skills */
+.skill {
+	/* Paper */
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important;
+	min-height: 186px;
+	height: 100%;
+}
+
+.skill .skill_title {
+	font-size:14px !important;
+	font-weight:  600 !important;
+	line-height:35px !important;	
+}
+
+.skill .skill_description {
+	display: flex;
+	align-items: center;
+	color: gray !important;
+	font-weight: 400!important;
+	line-height:18px !important;
+}
+
+.skill .skill_description .timeline_dot {
+	border-color: var(--main-color) !important;
+	padding:2px !important;
+	margin-right: 5px !important;
+}
+

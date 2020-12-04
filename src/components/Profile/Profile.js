@@ -76,7 +76,7 @@ const Profile = () => {
 					))}
 				</CustomTimeline>
 				<div className="button_container">
-					<a href="../../../public/cv.pdf" download>
+					<a href="https://github.com/bpurkuti/bpurkuti/blob/main/Resume_Bishwo-Purkuti.pdf" target= "_blank" rel="noopener" download>
 						<CustomButton text={"Download Cv"} icon={<GetAppIcon />} />
 					</a>
 				</div>

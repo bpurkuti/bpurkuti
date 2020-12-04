@@ -34,6 +34,10 @@
     border-bottom-left-radius: 6px;
 }
 
+.header .header_home:hover{
+    background-color: #b0c6f7 !important;
+}
+
 .header .header_left{
     margin-right: auto !important;
 }
@@ -47,4 +51,9 @@
     font-size: 15px !important;
     margin-right: 12px;
     color: black;
+}
+
+.header .header_right > a > .MuiSvgIcon-root:hover{
+    font-size: 18px !important;
+    color: var(--main-color) !important;
 }
