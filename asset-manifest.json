@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bpurkuti/static/css/main.4fb0c600.chunk.css",
-    "main.js": "/bpurkuti/static/js/main.cc84229f.chunk.js",
-    "main.js.map": "/bpurkuti/static/js/main.cc84229f.chunk.js.map",
+    "main.js": "/bpurkuti/static/js/main.a3fb51a8.chunk.js",
+    "main.js.map": "/bpurkuti/static/js/main.a3fb51a8.chunk.js.map",
     "runtime-main.js": "/bpurkuti/static/js/runtime-main.ad0648c0.js",
     "runtime-main.js.map": "/bpurkuti/static/js/runtime-main.ad0648c0.js.map",
     "static/css/2.1a02f21c.chunk.css": "/bpurkuti/static/css/2.1a02f21c.chunk.css",
@@ -14,7 +14,7 @@
     "static/css/2.1a02f21c.chunk.css.map": "/bpurkuti/static/css/2.1a02f21c.chunk.css.map",
     "static/css/main.4fb0c600.chunk.css.map": "/bpurkuti/static/css/main.4fb0c600.chunk.css.map",
     "static/js/2.b01393b1.chunk.js.LICENSE.txt": "/bpurkuti/static/js/2.b01393b1.chunk.js.LICENSE.txt",
-    "static/media/Resume.fb93690d.pdf": "/bpurkuti/static/media/Resume.fb93690d.pdf",
+    "static/media/Resume.f47d319f.pdf": "/bpurkuti/static/media/Resume.f47d319f.pdf",
     "static/media/index.css": "/bpurkuti/static/media/bg3.f3a94594.jpg",
     "static/media/personal_pic.29d040c4.jpg": "/bpurkuti/static/media/personal_pic.29d040c4.jpg"
   },
@@ -23,6 +23,6 @@
     "static/css/2.1a02f21c.chunk.css",
     "static/js/2.b01393b1.chunk.js",
     "static/css/main.4fb0c600.chunk.css",
-    "static/js/main.cc84229f.chunk.js"
+    "static/js/main.a3fb51a8.chunk.js"
   ]
 }
