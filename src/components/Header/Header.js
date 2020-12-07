@@ -26,26 +26,20 @@ const Header = (props) => {
 					<HomeRounded />
 				</Navbar.Brand>
 			</Nav.Link>
+
+			<Navbar.Toggle/>
+
 			<Navbar.Collapse>
 				<Nav className="header_left">
-					{/* Link to Resume */}
-					{/* <Nav.Link
-						as={NavLink}
-						to="/"
-						className={pathName === "/" ? "header_link_active" : "header_link"}
-					>
-						Resume
-					</Nav.Link> */}
-
 					{/* Link to Portfolio */}
 					<Nav.Link
 						as={NavLink}
-						to="/portfolio"
+						to="/about"
 						className={
-							pathName === "/portfolio" ? "header_link_active" : "header_link"
+							pathName === "/about" ? "header_link_active" : "header_link"
 						}
 					>
-						Portfolio
+						About
 					</Nav.Link>
 				</Nav>
 
@@ -60,7 +54,11 @@ const Header = (props) => {
 						</a>
 					))}
 
-					<CustomButton text={"Hire Me"} icon={<Telegram />} />
+					<a
+						href="/contact"
+					>
+						<CustomButton text={"Hire Me"} icon={<Telegram />}/>
+					</a>					
 				</div>
 				{/* This Button originally went inside div above without className  */}
 			</Navbar.Collapse>

@@ -5,7 +5,8 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Profile from "./components/Profile/Profile";
-import Portfolio from "./pages/Portfolio/Portfolio";
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 import Resume from "./pages/Resume/Resume";
 
 function App() {
@@ -21,8 +22,11 @@ function App() {
 						<Header />
 						<div className="main-content container_shadow">
 							<Switch>
-								<Route path="/portfolio">
-									<Portfolio />
+							<Route path="/contact">
+									<Contact />
+								</Route>
+								<Route path="/about">
+									<About />
 								</Route>
 								<Route path="/">
 									<Resume />

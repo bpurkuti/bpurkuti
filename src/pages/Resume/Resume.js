@@ -11,7 +11,6 @@ import TimelineContent from "@material-ui/lab/TimelineContent";
 import SchoolIcon from "@material-ui/icons/School";
 import TimelineDot from "@material-ui/lab/TimelineDot";
 import ComputerTwoToneIcon from '@material-ui/icons/ComputerTwoTone';
-import ComputerRoundedIcon from '@material-ui/icons/ComputerRounded';
 
 const Resume = () => {
 	return (
@@ -51,21 +50,21 @@ const Resume = () => {
 						{/* 1st Grid */}
 						<Grid item sm={12} md={6}>
 							<CustomTimeline icon={<ComputerTwoToneIcon />}>
-								{resumeData.experiences.map((experience) => (
+								{resumeData.projects1.map((project) => (
 									<TimelineItem>
 										<CustomTimelineSeperator />
 										<TimelineContent>
 											<Typography className="timeline_title">
-												{experience.title}
+												{project.title}
 											</Typography>
 											<Typography variant="caption" className="timeline_date">
-												{experience.date}
+												{project.date}
 											</Typography>
 											<Typography
 												variant="body2"
-												className="timeline_description"
+												className="timeline_description aboutme_text"
 											>
-												{experience.description}
+												{project.description}
 											</Typography>
 										</TimelineContent>
 									</TimelineItem>
@@ -75,22 +74,22 @@ const Resume = () => {
 
 						{/* 2nd Grid */}
 						<Grid item sm={12} md={6}>
-							<CustomTimeline  icon={<ComputerRoundedIcon />}>
-								{resumeData.experiences.map((experience) => (
+						<CustomTimeline icon={<ComputerTwoToneIcon />}>
+								{resumeData.projects2.map((project) => (
 									<TimelineItem>
 										<CustomTimelineSeperator />
 										<TimelineContent>
 											<Typography className="timeline_title">
-												{experience.title}
+												{project.title}
 											</Typography>
 											<Typography variant="caption" className="timeline_date">
-												{experience.date}	
+												{project.date}
 											</Typography>
 											<Typography
 												variant="body2"
-												className="timeline_description"
+												className="timeline_description aboutme_text"
 											>
-												{experience.description}
+												{project.description}
 											</Typography>
 										</TimelineContent>
 									</TimelineItem>
