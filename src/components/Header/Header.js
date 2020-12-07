@@ -1,13 +1,6 @@
 import React from "react";
-import {
-	Nav,
-	Navbar,
-} from "react-bootstrap";
-import {
-	HomeRounded,
-
-	Telegram,
-} from "@material-ui/icons";
+import { Nav, Navbar } from "react-bootstrap";
+import { HomeRounded, Telegram } from "@material-ui/icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, NavLink, withRouter } from "react-router-dom";
 import resumeData from "../../utils/resumeData";
@@ -27,7 +20,7 @@ const Header = (props) => {
 				</Navbar.Brand>
 			</Nav.Link>
 
-			<Navbar.Toggle/>
+			<Navbar.Toggle />
 
 			<Navbar.Collapse>
 				<Nav className="header_left">
@@ -53,12 +46,18 @@ const Header = (props) => {
 							{resumeData.socials[key].icon}
 						</a>
 					))}
-
-					<a
-						href="/contact"
-					>
-						<CustomButton text={"Hire Me"} icon={<Telegram />}/>
-					</a>					
+					<Nav className="header_left">
+						{/* Link to Portfolio */}
+						<Nav.Link
+							as={NavLink}
+							to="/contact"
+							className={
+								pathName === "/contact" ? "header_link_active" : "header_link"
+							}
+						>
+							<CustomButton text={"Hire Me"} icon={<Telegram />} />
+						</Nav.Link>
+					</Nav>
 				</div>
 				{/* This Button originally went inside div above without className  */}
 			</Navbar.Collapse>
