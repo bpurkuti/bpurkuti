@@ -6,7 +6,6 @@ import resumeData from "../../utils/resumeData";
 const Portfolio = () => {
 	return (
 		<>
-			{" "}
 			{/* About me */}
 			<Grid container className="section pb_45">
 				<Grid item className="section_title mb_30">
