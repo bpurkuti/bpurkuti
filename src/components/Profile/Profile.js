@@ -8,7 +8,7 @@ import myImage from "../../assets/images/personal_pic.jpg";
 import resumeData from "../../utils/resumeData";
 import CustomButton from "../Button/Button";
 import CustomTimeline, { CustomTimelineSeperator } from "../Timeline/Timeline";
-import pdf from "../../assets/cv.pdf";
+import pdf from "../../assets/Resume.pdf";
 import "./Profile.css";
 
 const CustomTimelineItem = ({ icon, title, text, link }) => (
