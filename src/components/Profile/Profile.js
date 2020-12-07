@@ -8,17 +8,16 @@ import myImage from "../../assets/images/personal_pic.jpg";
 import resumeData from "../../utils/resumeData";
 import CustomButton from "../Button/Button";
 import CustomTimeline, { CustomTimelineSeperator } from "../Timeline/Timeline";
-import FileSaver from "file-saver";
-
+import pdf from "../../assets/cv.pdf";
 import "./Profile.css";
 
-const CustomTimelineItem = ({ title, text, link }) => (
+const CustomTimelineItem = ({ icon, title, text, link }) => (
 	<TimelineItem>
 		<CustomTimelineSeperator />
 		<TimelineContent className="timeline_content">
 			{link ? (
 				<Typography className="timelineItem_text">
-					<span>{title}:</span>{" "}
+					{icon}{" "}
 					<a href={link} target="_blank" rel="noopener noreferrer">
 						{text}
 					</a>
@@ -31,20 +30,6 @@ const CustomTimelineItem = ({ title, text, link }) => (
 		</TimelineContent>
 	</TimelineItem>
 );
-
-// class DownloadLink extends React.Component {
-//     render() {
-//         return (
-//             <a href={this.props.src} download>{this.props.children}</a>
-//         )
-//     }
-// }
-
-// class MyComponent extends React.Component {
-// 	render() {
-// 		return <DownloadLink src="/cv.pdf">Click Here</DownloadLink>;
-// 	}
-// }
 
 const Profile = () => {
 	return (
@@ -64,19 +49,31 @@ const Profile = () => {
 				<CustomTimeline icon={<PersonOutlineIcon />}>
 					<CustomTimelineItem title="Name" text={resumeData.name} />
 					<CustomTimelineItem title="Title" text={resumeData.title} />
-					{/* <CustomTimelineItem title="Job" text={resumeData.job} /> */}
-					<CustomTimelineItem title="Address" text={resumeData.address} />
+					<CustomTimelineItem title="Cell" text={resumeData.cell} />
+					{/* <CustomTimelineItem title="Address" text={resumeData.address} /> */}
 
 					{Object.keys(resumeData.socials).map((key) => (
 						<CustomTimelineItem
-							title={key}
+							// title={key}
+							icon={resumeData.socials[key].icon}
 							text={resumeData.socials[key].text}
 							link={resumeData.socials[key].link}
 						/>
 					))}
 				</CustomTimeline>
-				<div className="button_container">
+				{/* <div className="button_container">
 					<a href="https://github.com/bpurkuti/bpurkuti/blob/main/Resume_Bishwo-Purkuti.pdf" target= "_blank" rel="noopener" download>
+						<CustomButton text={"Download Cv"} icon={<GetAppIcon />} />
+					</a>
+				</div> */}
+
+				<div className="button_container">
+					<a
+						href={pdf}
+						target="_blank"
+						rel="noopener"
+						download
+					>
 						<CustomButton text={"Download Cv"} icon={<GetAppIcon />} />
 					</a>
 				</div>

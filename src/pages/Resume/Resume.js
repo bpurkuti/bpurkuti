@@ -10,11 +10,13 @@ import TimelineItem from "@material-ui/lab/TimelineItem";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import SchoolIcon from "@material-ui/icons/School";
 import TimelineDot from "@material-ui/lab/TimelineDot";
+import ComputerTwoToneIcon from '@material-ui/icons/ComputerTwoTone';
+import ComputerRoundedIcon from '@material-ui/icons/ComputerRounded';
 
 const Resume = () => {
 	return (
 		<>
-			{/* About me */}
+			{/* About me
 			<Grid container className="section pb_45">
 				<Grid item className="section_title mb_30">
 					<span></span>
@@ -29,6 +31,106 @@ const Resume = () => {
 						{resumeData.about}
 					</Typography>
 				</Grid>
+			</Grid> */}
+
+			{/* Projects */}
+			<Grid container>
+				<h5 className = 'main_title_text multicolortext'>Hey, I'm Bishwo, an aspiring Software Engineer. </h5>
+			</Grid>
+
+			<Grid container className="resume_timeline pb_45">
+				<Grid item className="section_title mb_30">
+					<span></span>
+					<h6 xs={12} className="section_title_text">
+						My Projects
+					</h6>
+				</Grid>
+
+				<Grid item xs={12}>
+					<Grid container className="resume_content">
+						{/* 1st Grid */}
+						<Grid item sm={12} md={6}>
+							<CustomTimeline icon={<ComputerTwoToneIcon />}>
+								{resumeData.experiences.map((experience) => (
+									<TimelineItem>
+										<CustomTimelineSeperator />
+										<TimelineContent>
+											<Typography className="timeline_title">
+												{experience.title}
+											</Typography>
+											<Typography variant="caption" className="timeline_date">
+												{experience.date}
+											</Typography>
+											<Typography
+												variant="body2"
+												className="timeline_description"
+											>
+												{experience.description}
+											</Typography>
+										</TimelineContent>
+									</TimelineItem>
+								))}
+							</CustomTimeline>
+						</Grid>
+
+						{/* 2nd Grid */}
+						<Grid item sm={12} md={6}>
+							<CustomTimeline  icon={<ComputerRoundedIcon />}>
+								{resumeData.experiences.map((experience) => (
+									<TimelineItem>
+										<CustomTimelineSeperator />
+										<TimelineContent>
+											<Typography className="timeline_title">
+												{experience.title}
+											</Typography>
+											<Typography variant="caption" className="timeline_date">
+												{experience.date}	
+											</Typography>
+											<Typography
+												variant="body2"
+												className="timeline_description"
+											>
+												{experience.description}
+											</Typography>
+										</TimelineContent>
+									</TimelineItem>
+								))}
+							</CustomTimeline>
+						</Grid>
+
+						
+					</Grid>
+				</Grid>
+			</Grid>
+
+			{/* Skills */}
+
+			<Grid container className="section p_50">
+				<Grid item className="section_title mb_30">
+					<span></span>
+					<h6 xs={12} className="section_title_text">
+						Skills
+					</h6>
+				</Grid>
+			</Grid>
+
+			<Grid container className="section graybg pb_45 p_50" spacing={3}>
+				{resumeData.skills.map((skill) => (
+					<Grid item xs={12} sm={6} md={3}>
+						<Paper elevation={3} className="skill">
+							<Typography variant="h6" className="skill_title">
+								{skill.title}
+							</Typography>
+
+							{skill.description.map((element) => (
+								<Typography variant="body2" className="skill_description">
+									<TimelineDot variant={"outlined"} className="timeline_dot" />
+									{element}
+								</Typography>
+							))}
+						</Paper>
+					</Grid>
+				))}
 			</Grid>
 
 			{/* interests */}
@@ -59,35 +161,6 @@ const Resume = () => {
 						))}
 					</Grid>
 				</Grid>
-			</Grid>
-			{/* Skills */}
-
-			<Grid container className="section p_50">
-				<Grid item className="section_title mb_30">
-					<span></span>
-					<h6 xs={12} className="section_title_text">
-						Skills
-					</h6>
-				</Grid>
-			</Grid>
-
-			<Grid container className="section graybg pb_45 p_50" spacing={3}>
-				{resumeData.skills.map((skill) => (
-					<Grid item xs={12} sm={6} md={3}>
-						<Paper elevation={3} className="skill">
-							<Typography variant="h6" className="skill_title">
-								{skill.title}
-							</Typography>
-
-							{skill.description.map((element) => (
-								<Typography variant="body2" className="skill_description">
-									<TimelineDot variant={"outlined"} className="timeline_dot" />
-									{element}
-								</Typography>
-							))}
-						</Paper>
-					</Grid>
-				))}
 			</Grid>
 
 			{/* Education and experience */}

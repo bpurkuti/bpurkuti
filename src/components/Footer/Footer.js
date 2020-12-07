@@ -11,14 +11,13 @@ const Footer = () => {
 
 			<div className="footer_right">
 				<Typography className="footer_components">
-					Powered by{" "}
 					<a href="https://reactjs.org/" target="_blank">
 						React.js{" "}
 					</a>
 					| © 2020 Bishwo
 					<br />
 					<a
-						href="https://www.freepik.com/vectors/background"
+						href="https://www.freepik.com/free-vector/winter-background-with-pastel-color-brushes-leaves_11139547.htm"
 						target="_blank"
 						rel="noopener noreferrer"
 					>

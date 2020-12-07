@@ -6,6 +6,21 @@
 	white-space: pre-line;
 }
 
+.multicolortext {
+	background-image: linear-gradient(to left, violet, indigo, green, blue, rgb(141, 141, 80), orange, red);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	color: transparent;
+  }
+
+.main_title_text {
+	display: inline-block !important;
+	text-align: center !important;
+	padding-bottom: 20px !important;
+	margin: auto;
+}
+
 /* Timelien section */
 
 .resume_timeline .resume_content .timeline_title {

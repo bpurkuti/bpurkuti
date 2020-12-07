@@ -8,25 +8,56 @@ import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 
 export default {
 	name: "Bishwo Purkuti",
-	title: "I look forward",
+	title: "Software Engineer",
 	birthday: "October 26",
 	job: "Currently Pursuing",
+	cell: "7074770286",
 	address: "California",
+
+
+	projects: [
+		{
+			title: "Game Development",
+			description: "My interest in making games comes from my love for playing them. I have made a few different games as personal project, and would be interested in diving deeper.",
+			icon: <SportsEsportsIcon />,
+		},
+
+		{
+			title: "Full Stack Development",
+			description:
+				"I have come to appreciate web development after getting to work with both frontend and backend. My most notable project includes social good website written in using Django.",
+			icon: <LanguageIcon />,
+		},
+
+		{
+			title: "Software Development",
+			description: "There is always a new technology, and new thing to discover and build. I probably like application part of it better, but systems is also inteeresting.",
+			icon: <DesktopMacIcon />,
+		},
+
+		{
+			title: "Mobile App Development",
+			description: "Phone apps are cool. I have been experimenting with Android Studio and Flutter for various projects. I haven't been able to try swift due to lack of hardware, but I am confident I can learn fast due to my c++ background",
+			icon: <PhoneAndroidIcon />,
+		},
+	],
+
+
 
 	socials: {
 		Email: {
 			link: "mailto:bishworajpurkuti@gmail.com",
-			text: "Email me",
+			text: "bishworajpurkuti@gmail",
 			icon: <EmailIcon />,
 		},
 		Linkedin: {
 			link: "https://www.linkedin.com/in/bishwo-purkuti-a3b0101a3/",
-			text: "Connect",
+			text: "LinkedIn",
 			icon: <LinkedInIcon />,
 		},
 		Github: {
 			link: "https://www.github.com/bpurkuti",
-			text: "My Repos",
+			text: "Github",
 			icon: <GitHubIcon />,
 		},
 	},

@@ -1,20 +1,11 @@
 import React from "react";
 import {
-	Button,
-	Form,
-	FormControl,
 	Nav,
 	Navbar,
-	NavDropdown,
 } from "react-bootstrap";
 import {
 	HomeRounded,
-	SchoolRounded,
-	WorkRounded,
-	Facebook,
-	Twitter,
-	LinkedIn,
-	Github,
+
 	Telegram,
 } from "@material-ui/icons";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -35,7 +26,6 @@ const Header = (props) => {
 					<HomeRounded />
 				</Navbar.Brand>
 			</Nav.Link>
-
 			<Navbar.Collapse>
 				<Nav className="header_left">
 					{/* Link to Resume */}
@@ -48,7 +38,7 @@ const Header = (props) => {
 					</Nav.Link> */}
 
 					{/* Link to Portfolio */}
-					{/* <Nav.Link
+					<Nav.Link
 						as={NavLink}
 						to="/portfolio"
 						className={
@@ -56,7 +46,7 @@ const Header = (props) => {
 						}
 					>
 						Portfolio
-					</Nav.Link> */}
+					</Nav.Link>
 				</Nav>
 
 				<div className="header_right">
