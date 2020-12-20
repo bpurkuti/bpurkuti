@@ -5,11 +5,11 @@
 ## ![alt text](https://github.com/bpurkuti/Acrid-Dragonfly/blob/master/gameSprites/down2.png) I am currently pursuing work or collaboration oppurtunities.     ![alt text](https://github.com/bpurkuti/Acrid-Dragonfly/blob/master/up1.png)
 
 
-- Currently learning and attempting to create a discord bot, and finish gym based app
-- Open for collaboration on projects
-- I am proficient at C++, Java, Python, C, etc.. and fast at learning new languages
-- My current goal is to publish an app to the play store
-- You can reach me at [bishworajpurkuti@gmail.com](mailto:bishworajpurkuti@gmail.com?subject=[GitHub]%20Hello%20There%20)
+- Proficient at C++, Python and Java and keen on learning new tech. 
+- Focused on React js at the moment.
+- Trying to understand React at a deeper level as I am having a lot of fun with it right now.
+
+- Reach me at [bishworajpurkuti@gmail.com](mailto:bishworajpurkuti@gmail.com?subject=[GitHub]%20Hello%20There%20)
 - I am an avid gamer and a consumer of Japanese artforms. I am availabe to carry you to bronze on League of legends or talk about which shounen anime is the best...
 
 [![GH stats 🔝📈](https://github-readme-stats.vercel.app/api?username=bpurkuti&hide=stars&count_private=true&show_icons=true&theme=tokyonight&line_height=33&hide_rank=false)](https://github.com/bpurkuti?tab=repositories&q=&type=public&language=)
