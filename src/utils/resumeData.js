@@ -105,17 +105,17 @@ export default {
 
 	interests: [
 		{
+			title: "Full Stack Development",
+			description:
+				"I have come to appreciate web development after getting to work with both frontend and backend. I have been working with React.js recently for various different projects",
+			icon: <LanguageIcon />,
+		},
+
+		{
 			title: "Game Development",
 			description:
 				"My interest in making games comes from my love for playing them. I have made a few different games as personal project, and would be interested in diving deeper.",
 			icon: <SportsEsportsIcon />,
-		},
-
-		{
-			title: "Full Stack Development",
-			description:
-				"I have come to appreciate web development after getting to work with both frontend and backend. My most notable project includes social good website written in using Django.",
-			icon: <LanguageIcon />,
 		},
 
 		{
