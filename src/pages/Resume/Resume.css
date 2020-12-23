@@ -7,12 +7,21 @@
 }
 
 .multicolortext {
-	background-image: linear-gradient(to left, violet, indigo, green, blue, rgb(141, 141, 80), orange, red);
+	background-image: linear-gradient(
+		to left,
+		violet,
+		indigo,
+		green,
+		blue,
+		rgb(141, 141, 80),
+		orange,
+		red
+	);
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	background-clip: text;
 	color: transparent;
-  }
+}
 
 .main_title_text {
 	display: inline-block !important;
@@ -41,12 +50,17 @@
 	margin-top: 6px;
 }
 
+.resume_timeline .resume_content .timeline_description .description_paper {
+	background-color: rgb(141, 231, 105, 202);
+	margin: 10px;
+	color: rgb(72, 43, 99);
+}
 /* interests */
 .interest {
 	height: 100%;
 	text-align: center;
 	box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important;
-    background: rgb(243 243 243);
+	background: rgb(243 243 243);
 }
 
 .interest .interest_title {
@@ -81,22 +95,21 @@
 }
 
 .skill .skill_title {
-	font-size:14px !important;
-	font-weight:  600 !important;
-	line-height:35px !important;	
+	font-size: 14px !important;
+	font-weight: 600 !important;
+	line-height: 35px !important;
 }
 
 .skill .skill_description {
 	display: flex;
 	align-items: center;
 	color: gray !important;
-	font-weight: 400!important;
-	line-height:18px !important;
+	font-weight: 400 !important;
+	line-height: 18px !important;
 }
 
 .skill .skill_description .timeline_dot {
 	border-color: var(--main-color) !important;
-	padding:2px !important;
+	padding: 2px !important;
 	margin-right: 5px !important;
 }
-

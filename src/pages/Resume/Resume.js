@@ -10,7 +10,7 @@ import TimelineItem from "@material-ui/lab/TimelineItem";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import SchoolIcon from "@material-ui/icons/School";
 import TimelineDot from "@material-ui/lab/TimelineDot";
-import ComputerTwoToneIcon from '@material-ui/icons/ComputerTwoTone';
+import ComputerTwoToneIcon from "@material-ui/icons/ComputerTwoTone";
 
 const Resume = () => {
 	return (
@@ -34,7 +34,9 @@ const Resume = () => {
 
 			{/* Projects */}
 			<Grid container>
-				<h5 className = 'main_title_text multicolortext'>Hey, I'm Bishwo, an aspiring Software Engineer. </h5>
+				<h5 className="main_title_text multicolortext">
+					Hey, I'm Bishwo, an aspiring Software Engineer.{" "}
+				</h5>
 			</Grid>
 
 			<Grid container className="resume_timeline pb_45">
@@ -64,7 +66,13 @@ const Resume = () => {
 												variant="body2"
 												className="timeline_description aboutme_text"
 											>
-												{project.description}
+												{project.description.map((element) => (
+													<Typography variant="body2">
+														<Paper elevation={1} className="description_paper">
+															{element}
+														</Paper>
+													</Typography>
+												))}
 											</Typography>
 										</TimelineContent>
 									</TimelineItem>
@@ -74,7 +82,7 @@ const Resume = () => {
 
 						{/* 2nd Grid */}
 						<Grid item sm={12} md={6}>
-						<CustomTimeline icon={<ComputerTwoToneIcon />}>
+							<CustomTimeline icon={<ComputerTwoToneIcon />}>
 								{resumeData.projects2.map((project) => (
 									<TimelineItem>
 										<CustomTimelineSeperator />
@@ -89,15 +97,19 @@ const Resume = () => {
 												variant="body2"
 												className="timeline_description aboutme_text"
 											>
-												{project.description}
+												{project.description.map((element) => (
+													<Typography variant="body2">
+														<Paper elevation={1} className="description_paper">
+															{element}
+														</Paper>
+													</Typography>
+												))}{" "}
 											</Typography>
 										</TimelineContent>
 									</TimelineItem>
 								))}
 							</CustomTimeline>
 						</Grid>
-
-						
 					</Grid>
 				</Grid>
 			</Grid>

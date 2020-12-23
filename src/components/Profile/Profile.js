@@ -49,8 +49,6 @@ const Profile = () => {
 				<CustomTimeline icon={<PersonOutlineIcon />}>
 					<CustomTimelineItem title="Name" text={resumeData.name} />
 					<CustomTimelineItem title="Title" text={resumeData.title} />
-					<CustomTimelineItem title="Cell" text={resumeData.cell} />
-					{/* <CustomTimelineItem title="Address" text={resumeData.address} /> */}
 
 					{Object.keys(resumeData.socials).map((key) => (
 						<CustomTimelineItem
@@ -68,12 +66,7 @@ const Profile = () => {
 				</div> */}
 
 				<div className="button_container">
-					<a
-						href={pdf}
-						target="_blank"
-						rel="noopener"
-						download
-					>
+					<a href={pdf} target="_blank" rel="noopener" download>
 						<CustomButton text={"Download Cv"} icon={<GetAppIcon />} />
 					</a>
 				</div>

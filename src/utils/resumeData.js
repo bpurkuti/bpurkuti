@@ -3,46 +3,56 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import LanguageIcon from "@material-ui/icons/Language";
 import DesktopMacIcon from "@material-ui/icons/DesktopMac";
-import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
-import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
+import SportsEsportsIcon from "@material-ui/icons/SportsEsports";
+import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
 
 export default {
 	name: "Bishwo Purkuti",
 	title: "Software Engineer",
 	birthday: "October 26",
 	job: "Currently Pursuing",
-	cell: "7074770286",
+	// cell: "###",
 	address: "California",
 	email: "bishworajpurkuti@gmail.com",
-
-
 
 	projects1: [
 		{
 			title: "Acrid Dragonfly - Space Invader Game",
-			description: "● Developed a space invader game for HackMerced 2018 using python framework with a group of four.\n● Created objects for level design following OOP principles and implemented them. Also responsible for game logic.",
+			description: [
+				"Developed a space invader game for HackMerced 2018 using python framework with a group of four.",
+				"Created objects for level design following OOP principles and implemented them. Also responsible for game logic.",
+			],
 		},
 
 		{
 			title: "Aquarium Simulation",
-			description:
-				"● Simulated an aquarium using the OpenGL framework.\n● Features several 3D aquatic creatures who move within the confines of the aquarium\n● Implemented shadows, object collision, trivial object animations on static objects to Bezier curves on movingcreatures."
+			description: [
+				"Simulated an aquarium using the OpenGL framework.",
+				"Features several 3D aquatic creatures who move within the confines of the aquarium.",
+				"Implemented shadows, object collision, trivial object animations on static objects to Bezier curves on movingcreatures.",
+			],
 		},
 	],
 
 	projects2: [
 		{
 			title: "Neighbor Discovery via Flooding ",
-			description: "● Network node discovers its neighbor by pinging every node around it\n● Any node that is able to return the ping with TimeToLive = 1, then those are its neighbors\n● Each node discovers its neighbors and sub-neighbors which allows sending a message from any network node to another.",
+			description: [
+				"Network node discovers its neighbor by pinging every node around it",
+				"Any node that is able to return the ping with TimeToLive = 1, then those are its neighbors",
+				"Each node discovers its neighbors and sub-neighbors which allows sending a message from any network node to another.",
+			],
 		},
 
 		{
 			title: "NachOS - Operating System ",
-			description:
-				"● Built different features for NachOS to be more complete\n● Completed the thread system by implementing its subfeatures such as Join, Alarm, Priority Scheduling\n● Enabled support for multiprogramming through System Call implementations as well as reading and writing virtualmemory.",	
+			description: [
+				"Built different features for NachOS to be more complete",
+				"Completed the thread system by implementing its subfeatures such as Join, Alarm, Priority Scheduling",
+				"Enabled support for multiprogramming through System Call implementations as well as reading and writing virtualmemory.",
+			],
 		},
 	],
-
 
 	socials: {
 		Email: {
@@ -96,7 +106,8 @@ export default {
 	interests: [
 		{
 			title: "Game Development",
-			description: "My interest in making games comes from my love for playing them. I have made a few different games as personal project, and would be interested in diving deeper.",
+			description:
+				"My interest in making games comes from my love for playing them. I have made a few different games as personal project, and would be interested in diving deeper.",
 			icon: <SportsEsportsIcon />,
 		},
 
@@ -109,13 +120,15 @@ export default {
 
 		{
 			title: "Software Development",
-			description: "There is always a new technology, and new thing to discover and build. I probably like application part of it better, but systems is also inteeresting.",
+			description:
+				"There is always a new technology, and new thing to discover and build. I probably like application part of it better, but systems is also inteeresting.",
 			icon: <DesktopMacIcon />,
 		},
 
 		{
 			title: "Mobile App Development",
-			description: "Phone apps are cool. I have been experimenting with Android Studio and Flutter for various projects. I haven't been able to try swift due to lack of hardware, but I am confident I can learn fast due to my c++ background",
+			description:
+				"Phone apps are cool. I have been experimenting with Android Studio and Flutter for various projects. I haven't been able to try swift due to lack of hardware, but I am confident I can learn fast due to my c++ background",
 			icon: <PhoneAndroidIcon />,
 		},
 	],
@@ -128,6 +141,5 @@ export default {
 		},
 		{ title: "BACK-END", description: ["Node.js", "Java", "Python"] },
 		{ title: "DATABASES", description: ["Nodejs", "MySQL", "Firebase"] },
-
 	],
 };
