@@ -11,4 +11,4 @@
 - I'm an avid gamer and a consumer of Japanese artforms. I am availabe to carry you to bronze on League of legends or talk about which shounen anime is the best...
 
 [![GH stats 🔝📈](https://github-readme-stats.vercel.app/api?username=bpurkuti&hide=stars&count_private=true&show_icons=true&theme=tokyonight&line_height=33&hide_rank=false)](https://github.com/bpurkuti?tab=repositories&q=&type=public&language=)
-[![Top Langs 💻](https://github-readme-stats.vercel.app/api/top-langs/?username=bpurkuti&langs_count=8&count_private=true&theme=onedark&line_height=30&exclude_repo=Calculator&hide=nesC,C,Css,&layout=default)](https://github.com/bpurkuti?tab=repositories&q=&type=source&language=)
+[![Top Langs 💻](https://github-readme-stats.vercel.app/api/top-langs/?username=bpurkuti&langs_count=8&count_private=true&theme=onedark&line_height=30&exclude_repo=Calculator&hide=nesC,C,Css,&layout=compact)](https://github.com/bpurkuti?tab=repositories&q=&type=source&language=)
