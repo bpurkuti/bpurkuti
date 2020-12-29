@@ -1,8 +1,8 @@
 ![](hello.gif)    
 
-## Bishwo Purkuti  
-# Bachelors in [Computer Science and Engineering] from the University of California, Merced.
-## ![alt text](https://github.com/bpurkuti/Acrid-Dragonfly/blob/master/gameSprites/down2.png) I am currently pursuing work or collaboration oppurtunities.     ![alt text](https://github.com/bpurkuti/Acrid-Dragonfly/blob/master/up1.png)
+### Bishwo Purkuti  
+### Bachelors in [Computer Science and Engineering] from the University of California, Merced.
+### ![alt text](https://github.com/bpurkuti/Acrid-Dragonfly/blob/master/gameSprites/down2.png) I am currently pursuing work or collaboration oppurtunities.     ![alt text](https://github.com/bpurkuti/Acrid-Dragonfly/blob/master/up1.png)
 
 
 - Proficient at C++, Python and Java and keen on learning new tech. 
