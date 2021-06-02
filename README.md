@@ -1,5 +1,5 @@
 ![](hello.gif)    
-### ![alt text](https://github.com/bpurkuti/Acrid-Dragonfly/blob/master/gameSprites/down2.png) Bishwo ![alt text](https://github.com/bpurkuti/Acrid-Dragonfly/blob/master/up1.png)
+### ![alt text](https://github.com/bpurkuti/Acrid-Dragonfly/blob/master/gameSprites/down2.png)![alt text](https://github.com/bpurkuti/Acrid-Dragonfly/blob/master/up1.png)
 ### Bachelors in [Computer Science and Engineering] from the University of California, Merced.
 - Proficient at C++, Python and Java and keen on learning new tech. 
 - Trying to understand React at a deeper level as I am having a lot of fun with it right now.
